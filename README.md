@@ -1,4 +1,4 @@
-# Yusuf — Administrative & Executive Virtual Assistant
+# Yusuf Abass Onimisi — Administrative & Executive Virtual Assistant
 
 A premium, single-page portfolio site for an Administrative & Executive
 Virtual Assistant. It presents services, skills, tools, sample projects,
@@ -37,7 +37,7 @@ only work on a deployed site (Netlify Dev/production), not in local `pnpm dev`.
 
 ## Customizing
 
-- Swap the "[Your Full Name]" placeholder in `src/components/site/about-services.tsx`
+- Swap the "Yusuf Abass Onimisi" placeholder in `src/components/site/about-services.tsx`
   and the SEO title in `src/routes/__root.tsx` with the real full name.
 - Update contact details (email, WhatsApp, LinkedIn, Upwork, Fiverr, Calendly)
   in `CONTACT_LINKS` inside `src/lib/site-data.ts`.
