@@ -96,7 +96,7 @@ src/
 
 ## Placeholders to replace before launch
 
-- "[Your Full Name]" in `src/components/site/about-services.tsx` and the SEO
+- "Yusuf Abass Onimisi" in `src/components/site/about-services.tsx` and the SEO
   title in `src/routes/__root.tsx`
 - Email, WhatsApp, LinkedIn, Upwork, Fiverr, and Calendly links in
   `CONTACT_LINKS` (`src/lib/site-data.ts`)
