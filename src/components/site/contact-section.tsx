@@ -140,7 +140,7 @@ export function ContactSection() {
                 {error && (
                   <p className="text-sm font-medium text-destructive" role="alert">
                     Something went wrong sending your message. Please try again
-                    or email hello@yusufva.com directly.
+                    or email abacom171@gmail.com directly.
                   </p>
                 )}
 

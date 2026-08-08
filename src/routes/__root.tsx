@@ -3,7 +3,7 @@ import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import '../styles.css'
 
 const SITE_URL = 'https://meek-llama-cce137.netlify.app'
-const SITE_TITLE = 'Yusuf [Your Full Name] — Administrative & Executive Virtual Assistant'
+const SITE_TITLE = 'Yusuf Abass Onimisi — Administrative & Executive Virtual Assistant'
 const SITE_DESCRIPTION =
   'Helping busy executives and entrepreneurs streamline operations, stay organized, and focus on growing their businesses. Calendar management, inbox organization, travel planning, and reliable administrative support.'
 
@@ -19,7 +19,7 @@ export const Route = createRootRoute({
         content:
           'virtual assistant, executive assistant, administrative support, remote assistant, calendar management, inbox management, project coordination',
       },
-      { name: 'author', content: 'Yusuf' },
+      { name: 'author', content: 'Yusuf Abass Onimisi' },
       { name: 'robots', content: 'index, follow' },
       { name: 'theme-color', content: '#0a1f44' },
       { property: 'og:type', content: 'website' },

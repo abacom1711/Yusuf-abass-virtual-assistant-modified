@@ -321,7 +321,7 @@ export const FAQS = [
   {
     question: 'How can clients hire you?',
     answer:
-      'Reach out through the contact form below, or connect directly through Upwork, Fiverr, LinkedIn, or WhatsApp. We will start with a short discovery call to map out your priorities before any work begins.',
+      'Reach out through the contact form below, or connect directly through LinkedIn, WhatsApp, or email. We will start with a short discovery call to map out your priorities before any work begins.',
   },
   {
     question: 'Do you offer ongoing support?',
@@ -331,11 +331,9 @@ export const FAQS = [
 ]
 
 export const CONTACT_LINKS = [
-  { label: 'Email', value: 'hello@yusufva.com', href: 'mailto:hello@yusufva.com', icon: Mail },
-  { label: 'LinkedIn', value: '/in/yusuf-virtual-assistant', href: 'https://linkedin.com/in/yusuf-virtual-assistant', icon: Users },
-  { label: 'WhatsApp', value: '+1 (000) 000-0000', href: 'https://wa.me/10000000000', icon: MessageSquare },
-  { label: 'Upwork', value: 'Hire me on Upwork', href: 'https://www.upwork.com', icon: Briefcase },
-  { label: 'Fiverr', value: 'Hire me on Fiverr', href: 'https://www.fiverr.com', icon: Sparkles },
+  { label: 'Email', value: 'abacom171@gmail.com', href: 'mailto:abacom171@gmail.com', icon: Mail },
+  { label: 'LinkedIn', value: 'Yusuf Abass Onimisi', href: 'https://bit.ly/4xaTvyi', icon: Users },
+  { label: 'WhatsApp', value: '+234 904 123 9803', href: 'https://wa.me/2349041239803', icon: MessageSquare },
   { label: 'Calendly', value: 'Book a discovery call', href: 'https://calendly.com', icon: CalendarCheck },
 ]
 
