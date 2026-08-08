@@ -3,12 +3,6 @@ import { Send } from 'lucide-react'
 import { Reveal } from '@/components/site/reveal'
 import { CONTACT_LINKS, SERVICE_OPTIONS } from '@/lib/site-data'
 
-function encode(data: Record<string, string>) {
-  return Object.entries(data)
-    .map(([key, val]) => `${encodeURIComponent(key)}=${encodeURIComponent(val)}`)
-    .join('&')
-}
-
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
@@ -18,20 +12,26 @@ export function ContactSection() {
     e.preventDefault()
     setSubmitting(true)
     setError(false)
-    const formData = new FormData(e.currentTarget)
-    const data: Record<string, string> = { 'form-name': 'contact' }
-    formData.forEach((value, key) => {
-      data[key] = String(value)
-    })
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
 
     try {
-      const response = await fetch('/contact.html', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode(data),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.get('name'),
+          email: formData.get('email'),
+          company: formData.get('company'),
+          service: formData.get('service'),
+          message: formData.get('message'),
+        }),
       })
+
       if (!response.ok) throw new Error('Submission failed')
       setSubmitted(true)
+      form.reset()
     } catch {
       setError(true)
     } finally {
@@ -66,8 +66,8 @@ export function ContactSection() {
                   Message sent
                 </h3>
                 <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-                  Thanks for reaching out — expect a reply within one business
-                  day.
+                  Thanks for reaching out — your message has been sent directly
+                  to my email. Expect a reply within one business day.
                 </p>
                 <button
                   type="button"
@@ -78,21 +78,7 @@ export function ContactSection() {
                 </button>
               </div>
             ) : (
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-                className="space-y-5"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <p hidden>
-                  <label>
-                    Don&rsquo;t fill this out: <input name="bot-field" />
-                  </label>
-                </p>
-
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid gap-5 sm:grid-cols-2">
                   <Field label="Name" name="name" type="text" required placeholder="Jordan Ellery" />
                   <Field label="Email" name="email" type="email" required placeholder="jordan@company.com" />
