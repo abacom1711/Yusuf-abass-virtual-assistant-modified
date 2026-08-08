@@ -1,9 +1,11 @@
-import type { Handler } from '@netlify/functions'
 import { connect } from 'node:tls'
 
 const RECIPIENT = 'abacom171@gmail.com'
 
-const handler: Handler = async (event) => {
+const handler = async (event: {
+  httpMethod?: string
+  body?: string | null
+}) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' }
   }
@@ -23,24 +25,21 @@ const handler: Handler = async (event) => {
       return { statusCode: 500, body: 'Email service is not configured' }
     }
 
-    const subject = `New website enquiry from ${name}`
-    const text = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Company: ${company || 'Not provided'}`,
-      `Service needed: ${service}`,
-      '',
-      'Message:',
-      message,
-    ].join('\n')
-
     await sendGmail({
       user: gmailUser,
       password: gmailAppPassword,
       to: RECIPIENT,
       replyTo: email,
-      subject,
-      text,
+      subject: `New website enquiry from ${name}`,
+      text: [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Company: ${company || 'Not provided'}`,
+        `Service needed: ${service}`,
+        '',
+        'Message:',
+        message,
+      ].join('\n'),
     })
 
     return { statusCode: 200, body: JSON.stringify({ success: true }) }
