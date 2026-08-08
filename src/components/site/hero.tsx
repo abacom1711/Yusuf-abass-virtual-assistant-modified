@@ -52,12 +52,12 @@ export function Hero() {
           <dl className="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-8">
             <div>
               <dt className="sr-only">Years of experience</dt>
-              <dd className="font-display text-2xl font-bold">6+</dd>
+              <dd className="font-display text-2xl font-bold">1+</dd>
               <p className="mt-1 text-xs text-primary-foreground/60">Years experience</p>
             </div>
             <div>
               <dt className="sr-only">Clients served</dt>
-              <dd className="font-display text-2xl font-bold">34+</dd>
+              <dd className="font-display text-2xl font-bold">2+</dd>
               <p className="mt-1 text-xs text-primary-foreground/60">Clients served</p>
             </div>
             <div>

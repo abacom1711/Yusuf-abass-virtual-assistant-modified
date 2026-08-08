@@ -23,7 +23,7 @@ export function FloatingActions() {
         </a>
       )}
       <a
-        href="https://wa.me/10000000000"
+        href="https://wa.me/2349041239803"
         aria-label="Message on WhatsApp"
         className="flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:-translate-y-1"
       >

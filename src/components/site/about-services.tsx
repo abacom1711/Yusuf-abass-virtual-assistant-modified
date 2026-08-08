@@ -14,7 +14,7 @@ export function About() {
             The calm, organized presence behind a well-run business
           </h2>
           <p className="mt-5 leading-relaxed text-muted-foreground">
-            I am [Your Full Name], a highly organized Administrative &amp;
+            I am Yusuf Abass Onimisi, a highly organized Administrative &amp;
             Executive Virtual Assistant who helps founders and leadership teams
             operate efficiently. I take on the recurring, detail-heavy work —
             calendars, inboxes, documentation, coordination — so the people I

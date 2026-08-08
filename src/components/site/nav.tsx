@@ -19,8 +19,13 @@ export function SiteNav() {
       </div>
 
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
-        <a href="#home" className="font-display text-lg font-bold tracking-tight text-primary">
-          Yusuf<span className="text-accent">.</span>
+        <a href="#home" className="font-display flex min-w-0 flex-col leading-tight text-primary">
+          <span className="whitespace-nowrap text-base font-bold tracking-tight sm:text-lg">
+            Yusuf Abass Onimisi<span className="text-accent">.</span>
+          </span>
+          <span className="truncate text-[11px] font-normal italic tracking-normal text-muted-foreground">
+            Administrative &amp; Executive Virtual Assistant
+          </span>
         </a>
 
         <ul className="hidden items-center gap-7 lg:flex">

@@ -1,4 +1,4 @@
-import { ArrowUp, Briefcase, Linkedin, Mail, MessageCircle } from 'lucide-react'
+import { ArrowUp, Linkedin, Mail, MessageCircle } from 'lucide-react'
 import { NAV_LINKS, SERVICES } from '@/lib/site-data'
 
 export function SiteFooter() {
@@ -15,32 +15,25 @@ export function SiteFooter() {
           </p>
           <div className="mt-5 flex gap-3">
             <a
-              href="https://linkedin.com/in/yusuf-virtual-assistant"
+              href="https://bit.ly/4xaTvyi"
               aria-label="LinkedIn"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-accent hover:text-accent"
             >
               <Linkedin size={16} />
             </a>
             <a
-              href="mailto:hello@yusufva.com"
+              href="mailto:abacom171@gmail.com"
               aria-label="Email"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-accent hover:text-accent"
             >
               <Mail size={16} />
             </a>
             <a
-              href="https://wa.me/10000000000"
+              href="https://wa.me/2349041239803"
               aria-label="WhatsApp"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-accent hover:text-accent"
             >
               <MessageCircle size={16} />
-            </a>
-            <a
-              href="https://www.upwork.com"
-              aria-label="Upwork"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-accent hover:text-accent"
-            >
-              <Briefcase size={16} />
             </a>
           </div>
         </div>
@@ -97,7 +90,7 @@ export function SiteFooter() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-6 text-xs text-primary-foreground/55 sm:flex-row sm:px-8">
-          <p>© {new Date().getFullYear()} Yusuf. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Yusuf Abass Onimisi. All rights reserved.</p>
           <a
             href="#home"
             className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 transition-colors hover:border-accent hover:text-accent"
