@@ -295,11 +295,11 @@ export const WHY_WORK_WITH_ME = [
 ]
 
 export const STATS = [
-  { label: 'Projects Completed', value: 87, suffix: '+' },
-  { label: 'Happy Clients', value: 34, suffix: '+' },
-  { label: 'Tasks Managed', value: 2400, suffix: '+' },
+  { label: 'Projects Completed', value: 15, suffix: '+' },
+  { label: 'Happy Clients', value: 2, suffix: '+' },
+  { label: 'Tasks Managed', value: 50, suffix: '+' },
   { label: 'Response Time', value: 4, suffix: 'hrs avg' },
-  { label: 'Years of Experience', value: 6, suffix: '+' },
+  { label: 'Years of Experience', value: 1, suffix: '+' },
 ]
 
 export const FAQS = [
